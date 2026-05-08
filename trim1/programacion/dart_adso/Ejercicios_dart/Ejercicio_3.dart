@@ -4,22 +4,21 @@
 import 'dart:io';
 
 void main(List<String> args) {
-
   //ENTRADA DE DATOS
-  stdout.writeln("Ingrese el precio del producto: ");
-  precio = double.parse(stdin.readLineSync()!);
-
-
+  //Definicion de variables
   double distanciaRecorrida, tiempoEmpleado, velocidadPromedio;
+  String nombre;
 
-  stdout.writeln("Ingrese el nombre del conductor");
-  String nombre = stdin.readLineSync()!;
+  stdout.writeln("Ingrese el nombre del conductor"); //Ingresar Datos
+  nombre = stdin.readLineSync()!; //Leer el dato
 
-  stdout.write("Ingrese la distancia recorrida en km");
+  stdout.writeln("Ingrese la distancia recorrida en km");
   distanciaRecorrida = double.parse(stdin.readLineSync()!);
 
-
-  stdout.write("Ingrese el tiempo empleado en horas");
+  stdout.writeln("Ingrese el tiempo empleado en horas");
   tiempoEmpleado = double.parse(stdin.readLineSync()!);
 
+  //PROCESO
+  velocidadPromedio = distanciaRecorrida/tiempoEmpleado;
+  print("El nombre del conductor es: $nombre y su velocidad promedio es $velocidadPromedio km/h");
 }
