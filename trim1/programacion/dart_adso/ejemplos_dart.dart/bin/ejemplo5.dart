@@ -1,6 +1,8 @@
 //OPERADORES
 
 // Operador AND 
+import 'dart:io';
+
 void main(List<String> args) {
   bool tieneCarnet = true;
   int edad = 25;
