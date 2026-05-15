@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimentador de Dimensiones y Color</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laboratorio CSS Interactivo</h1>
+        
+        <div class="main-layout">
+            <!-- Panel de Controles -->
+            <section class="controls">
+                <div class="control-group">
+                    <h3>Dimensiones</h3>
+                    <label for="width-input">Ancho:</label>
+                    <div class="input-flex">
+                        <input type="number" id="width-input" value="300">
+                        <select id="width-unit">
+                            <option value="px">px</option>
+                            <option value="rem">rem</option>
+                            <option value="%">%</option>
+                            <option value="vw">vw</option>
+                        </select>
+                    </div>
+
+                    <label for="height-input">Alto:</label>
+                    <div class="input-flex">
+                        <input type="number" id="height-input" value="200">
+                        <select id="height-unit">
+                            <option value="px">px</option>
+                            <option value="rem">rem</option>
+                            <option value="%">%</option>
+                            <option value="vh">vh</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h3>Color de Fondo</h3>
+                    <label for="color-format">Formato:</label>
+                    <select id="color-format">
+                        <option value="hex">HEX</option>
+                        <option value="rgb">RGB</option>
+                        <option value="hsl">HSL</option>
+                    </select>
+                    
+                    <div id="color-inputs">
+                        <!-- Se genera dinámicamente con JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Área de Previsualización -->
+            <section class="preview-area">
+                <div id="preview-box" class="box">
+                    <span id="box-label">Vista Previa</span>
+                </div>
+                <div class="code-output">
+                    <code>width: <span id="out-width">300px</span>;</code>
+                    <code>height: <span id="out-height">200px</span>;</code>
+                    <code>background-color: <span id="out-color">#3498db</span>;</code>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
