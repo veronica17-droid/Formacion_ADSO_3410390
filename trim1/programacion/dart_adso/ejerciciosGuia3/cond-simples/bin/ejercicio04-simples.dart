@@ -16,18 +16,13 @@ void main(List<String> args) {
   preciOriginal = double.parse(stdin.readLineSync()!);
 
   //PROCESO Y SALIDA
+  descuento =preciOriginal*0.1;
   if (clave == 2) {
     descuento = preciOriginal * 0.20;
-    precioConDescuento = preciOriginal - descuento;
+  }
+  precioConDescuento = preciOriginal - descuento;
     stdout.write(
       "El nombre del producto es $nombre, y su clave es $clave, por lo tanto tiene un descuento de $descuento, entonces paga \$$precioConDescuento",
     );
-  }
-  if (clave == 1) {
-    descuento = preciOriginal * 0.10;
-    precioConDescuento = preciOriginal - descuento;
-    stdout.write(
-      "El nombre del producto es $nombre, y su clave es $clave, por lo tanto tiene un descuento de $descuento, entonces paga \$$precioConDescuento",
-    );
-  }
+  
 }
