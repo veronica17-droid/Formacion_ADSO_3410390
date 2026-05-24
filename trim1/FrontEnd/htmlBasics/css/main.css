@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 section{
-    background-color: rgb(255, 188, 232);
+    background-color: rgb(255, 188, 232)!important;
     color: #000000;
     font-weight: 500;/* */
     padding: 1rem;
@@ -17,3 +17,4 @@ section{
     width: 70%;
     border-radius: 0.5rem;
 }
+

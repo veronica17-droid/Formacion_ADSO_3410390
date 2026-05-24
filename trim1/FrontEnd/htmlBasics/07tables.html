@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tablas en HTML</title>
+    <style>
+        table{
+            width: 100%;
+            font-size: 0.8rem;
+            color: rgb(187, 41, 200);
+            border-collapse: collapse;
+            tr{
+                th{
+                    background-color: rgb(238, 218, 235);
+                }
+                td{
+                    background-color: rgba(0, 0, 0, 0.707);
+                    padding: 0.3rem 0.1rem;
+                }
+            }
+            tr:nth-child(even) td{
+                background-color: aliceblue;
+            }
+            tfoot{
+                td{
+                background-color: rgb(164, 149, 149);
+                color: black;
+                text-align: center;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>07. Tables</h1>
+        <p>En el desarrollo web, las tablas son elementos fundamentales que se utilizan para organizar y mostrar
+            información estructurada en filas y columnas
+        </p>
+        <p>
+            Su propósito principal es presentar datos tabulares de forma lógica, clara y fácil de leer para el usuario,
+            como por ejemplo calendarios, listas de precios, horarios o estadísticas.
+        </p>
+    </header>
+    <section>
+        <table>
+            <!-- Cabecera (En esta seccion van los titulos de las columnas) -->
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo (En esta seccion van los datos) -->
+            <tbody>
+                <tr>
+                    <td>Teclado</td>
+                    <td>1</td>
+                    <td>$45.000</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>1</td>
+                    <td>$56.000</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td>2</td>
+                    <td>$2'000.000</td>
+                </tr>
+                <tr>
+                    <td>Pez</td>
+                    <td>23</td>
+                    <td>$2.000</td>
+                </tr>
+                <tr>
+                    <td>Disco duro</td>
+                    <td>5</td>
+                    <td>$200.000</td>
+                </tr>
+                <tr>
+                    <td>Memoria USB</td>
+                    <td>8</td>
+                    <td>$40.000</td>
+                </tr>
+            </tbody>
+            <!-- Pie de tabla (van los resumenes o totales de cifras) -->
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total a pagar</td>
+                    <td>30'000.000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+
+</html>
