@@ -15,15 +15,11 @@ void main(List<String> args) {
     descuento = montoCompra * 0.20;
     precioTotal = montoCompra - descuento;
     stdout.write("Debe pagar $precioTotal");
-  } else {
-    if (montoCompra > 10000) {
-      if (montoCompra <= 20000) {
-        descuento = montoCompra * 0.10;
+  } else if (montoCompra > 10000){
+     descuento = montoCompra * 0.10;
         precioTotal = montoCompra - descuento;
         stdout.write("Debe pagar $precioTotal");
-      }
-    } else {
+  } else {
       stdout.write("NO HAY DESCUENTO");
     }
   }
-}

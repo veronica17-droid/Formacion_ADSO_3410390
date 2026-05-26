@@ -19,15 +19,13 @@ void main(List<String> args) {
     descuento = totalCompra * 0.10;
     totalPago = totalCompra - descuento;
     stdout.writeln("Debe pagar $totalPago");
+  } else if (cantComputadores >= 5 && cantComputadores < 10) {
+    descuento = totalCompra * 0.20;
+    totalPago = totalCompra - descuento;
+    stdout.writeln("Debe pagar $totalPago");
   } else {
-    if (cantComputadores >= 5 && cantComputadores < 10) {
-      descuento = totalCompra * 0.20;
-      totalPago = totalCompra - descuento;
-      stdout.writeln("Debe pagar $totalPago");
-    } else {
-      descuento = totalCompra * 0.40;
-      totalPago = totalCompra - descuento;
-      stdout.writeln("Debe pagar $totalPago");
-    }
+    descuento = totalCompra * 0.40;
+    totalPago = totalCompra - descuento;
+    stdout.writeln("Debe pagar $totalPago");
   }
 }
