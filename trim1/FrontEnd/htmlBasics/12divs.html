@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Divs</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.main{
+            border: 2px solid black;
+            color: rgb(40, 1, 148);
+            font-size: 1rem;
+            padding: 1.5rem;
+            div.header{
+                background-color: rgba(179, 24, 179, 0.336);
+                border: 2px solid black;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+        div.content{
+            background-color: rgba(46, 139, 3, 0.459);
+            border: 2px solid ;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column ;
+            justify-content: center;
+            align-items: center;
+            margin: 0.7rem 0;
+            min-height: 400px;
+        }
+        div.footer{
+            background-color: rgba(46, 139, 3, 0.459);
+            border: 2px solid ;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column ;
+            justify-content: center;
+            align-items: center;
+            margin: 0.7rem 0;
+        }
+        div.biografia{
+            background-color: rgba(46, 139, 3, 0.459);
+            border: 2px solid ;
+            padding: 1rem;
+            width: 80%;
+            margin: 0.5rem 0;
+        }
+        div.resumen{
+            background-color: rgba(46, 139, 3, 0.459);
+            border: 2px solid ;
+            padding: 1rem;
+            width: 80%;
+            margin: 0.5rem 0;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>12. Estructura Divs</h1>
+        <h2>Con esta estructura podemos generar una estructura en el sitio web (forma antigua)</h2>
+    </header>
+    <section>
+        <div class="main">
+            <div class="header">
+                <h4> Este es el header</h4>
+                <p>vero vero vero vero vero vero vero vero</p>
+            </div>
+            <div class="content">
+                <h4>Este es el div para el contenido</h4>
+                <div class="biografia"></div>
+                <div class="resumen"></div>
+            </div>
+            <div class="footer">
+                <h4>Este es el Pie de página</h4>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
