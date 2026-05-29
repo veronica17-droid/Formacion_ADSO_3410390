@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Estructura semantica HTML 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 70%;
+            header{
+                border: 1px solid black;
+                background-color: aqua;
+            }
+            section{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                background-color: rgb(170, 37, 37);
+                width: 100%;
+                margin: 1rem 0;
+                border-radius: unset;
+                
+            }
+            article{
+            border: 2px solid green;
+            background-color: blue;
+            width: 70%;
+        }
+        aside{
+            width: 30%;
+            border: 2px solid green;
+            background-color: blue;
+        }
+        }
+        footer{
+            border: 2px solid white;
+            background-color: antiquewhite;
+        }
+        header, nav, aside, footer{
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>14. Estructura semantica HTML 5</h1>
+        <p>Generación de estructura moderna, utilizando las etiquetas de HTML 5 para realización del maquetado</p>
+    </header>
+    <section>
+        <!-- Contenedor principal -->
+        <main>
+            <header>
+                <h1>Titulo encabezado</h1>
+                <nav>Menú navegación</nav>
+            </header>
+            <section>
+                <article>Contenido del article</article>
+                <aside>Contenido Aside</aside>
+            </section>
+            <footer>Contenido footer</footer>
+        </main>
+    </section>
+</body>
+
+</html>
