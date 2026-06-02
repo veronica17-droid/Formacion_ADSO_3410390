@@ -20,6 +20,7 @@ void main(List<String> args) {
     porcentajeImpuesto = valorVehiculo * 0.015;
   }
     impuestoAnual = valorVehiculo + porcentajeImpuesto;
+    stdout.write("El modelo es $modelo y la marca $marca");
     stdout.write("La tarifa aplicada es de $tarifa");
     stdout.write("El impuesto es de $porcentajeImpuesto");
     stdout.write("El total a pagar de impuesto anual es: $impuestoAnual");
