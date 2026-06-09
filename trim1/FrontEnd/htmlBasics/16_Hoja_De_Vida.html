@@ -1,22 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida</title>
     <style>
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(253, 247, 240);
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: rgb(133, 133, 251);
+            color: white;
+            padding: 2rem;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header div {
+            text-align: left;
+        }
+
+        img {
+            margin: 1rem auto;
+            border-radius: 10px;
+            display: block;
+            height: 15rem;
+
+            height: 12rem;
+            width: 12rem;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid rgb(66, 105, 247);
+        }
+
+        main {
+            background-color: rgb(133, 133, 251);
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: flex;
+            padding: 1.5rem;
+            gap: 2rem;
+        }
+
+        #izquierda {
+            flex: 65%;
+            background-color: rgba(255, 255, 255, 0.826);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        #izquierda section {
+            margin-bottom: 2rem;
+        }
+
+        aside {
+            flex: 35%;
+            background-color: rgb(250, 255, 255);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        aside section {
+            margin-bottom: 2rem;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: rgb(48, 31, 235);
+            transform: translateY(-2px);
+            /*un  efecto de elevación */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #020000;
+            margin-top: 1rem;
+            margin-bottom: 1.2rem;
+            position: relative;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid rgb(0, 17, 149);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #646262;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="">
+        <img src="img/HojaDeVida.jpg" alt="Foto de perfil">
         <h1>Angie Verónica Carvajal Cardona</h1>
         <h3>Aprendiz SENA - Tecnóloga en Análisis y Desarrollo de Software (ADSO)</h3>
     </header>
+
     <main>
+        <section id="izquierda">
+            <section>
+                <h2>Sobre mí</h2>
+                <p>Apasionada por la tecnología y el desarrollo de software, actualmente culminando mi etapa lectiva en
+                    el programa ADSO del SENA. He enfocado mis estudios en comprender la arquitectura del software, el
+                    control de versiones y la resolución de problemas mediante código limpio. Tengo un gran interés por
+                    el desarrollo Frontend, Backend, Full-Stack y el diseño de bases de datos eficientes. Estoy lista
+                    para afrontar el reto de mi etapa práctica, aportando proactividad, pensamiento analítico y un
+                    fuerte compromiso con los estándares de la empresa.</p>
+            </section>
+
+            <section>
+                <h2>Experiencia</h2>
+                <ul>
+                    <li>
+                        <p>Colaboré en el mantenimiento básico de equipos de cómputo y actualización de programas para
+                            los clientes.</p>
+                    </li>
+                    <li>
+                        <p>Fui reconocido por mi puntualidad, buena actitud y capacidad para trabajar bajo presión en
+                            días de alta rotación.</p>
+                    </li>
+                    <li>
+                        <p>Participé en el diseño y desarrollo de un sistema web para la gestión de inventarios y ventas
+                            de una microempresa local como proyecto principal de la formación.</p>
+                    </li>
+                    <li>
+                        <p>Diseñé y organicé la base de datos para el registro de usuarios y productos, garantizando el
+                            orden de la información.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Trayectoria</h2>
+                <ul>
+                    <li>
+                        <h4>Aprendiz en Tecnología ADSO | SENA</h4>
+                        <h5>2024 – Presente</h5>
+                        <p>Ingreso al Servicio Nacional de Aprendizaje para enfocar mi perfil en el mundo digital y el
+                            desarrollo de software.</p>
+                    </li>
+                    <li>
+                        <h4>Auxiliar de Logística y Servicio (Trabajo Temporal) | Almacenes Éxito</h4>
+                        <h5>2023 – 2024 (1 año)</h5>
+                        <p>Responsable del control de inventarios físicos y organización de mercancía en bodega.</p>
+                    </li>
+                    <li>
+                        <h4>Bachiller Académico | Institución Educativa Técnico Industrial</h4>
+                        <h5>Graduado en 2022</h5>
+                        <p>Culminación de estudios secundarios con énfasis y gusto por las herramientas informáticas y
+                            la tecnología.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Educación</h2>
+                <ul>
+                    <li>
+                        <h4>Tecnología en Análisis y Desarrollo de Software (ADSO)</h4>
+                        <h5>Servicio Nacional de Aprendizaje (SENA) — Centro de Procesos Industriales</h5>
+                        <p>Estado actual: Etapa lectiva culminada con éxito. Disponible de manera inmediata para iniciar
+                            la etapa práctica mediante Contrato de Aprendizaje.</p>
+                    </li>
+                    <li>
+                        <h4>Curso Especializado: Desarrollo Web Básico y Manejo de Herramientas Digitales (80 horas)
+                        </h4>
+                        <h5>SENA SofíaPlus</h5>
+                        <p>Formación complementaria previa al tecnólogo para afianzar conceptos de lógica y entornos
+                            virtuales.</p>
+                    </li>
+                    <li>
+                        <h4>Bachiller Académico</h4>
+                        <h5>Institución Educativa Técnico Industrial</h5>
+                        <p>Enfoque y profundización en herramientas informáticas y tecnología.</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
         <aside>
             <section>
                 <h3>Información de contacto</h3>
@@ -27,16 +226,17 @@
                     <li>Dirección: Calle 123, x Lugar.</li>
                 </ul>
             </section>
+
             <section>
                 <h3>Habilidades Blandas</h3>
                 <ul>
-                    <li>Habilidades</li>
                     <li>Trabajo en Equipo</li>
                     <li>Pensamiento Lógico y Analítico</li>
                     <li>Organización y Puntualidad</li>
                     <li>Adaptabilidad</li>
                 </ul>
             </section>
+
             <section>
                 <h3>Referencias</h3>
                 <ul>
@@ -54,84 +254,16 @@
                     </li>
                 </ul>
             </section>
+
             <section>
-                <h3>Portafolio en linea</h3>
-                <a href="https://github.com/veronica17-droid/Formacion_ADSO_3410390">Git Hub</a>
+                <h3>Portafolio en línea</h3>
+                <a href="https://github.com/veronica17-droid/Formacion_ADSO_3410390">GitHub</a>
             </section>
         </aside>
     </main>
 
-    <section>
-        <h2>Sobre mi</h2>
-        <p>Apasionado por la tecnología y el desarrollo de software, actualmente culminando mi etapa lectiva en el programa ADSO del SENA. He enfocado mis estudios en comprender la arquitectura del software, el control de versiones y la resolución de problemas mediante código limpio. Tengo un gran interés por el desarrollo Frontend, Backend, Full-Stack y el diseño de bases de datos eficientes. Estoy listo para afrontar el reto de mi etapa práctica, aportando proactividad, pensamiento analítico y un fuerte compromiso con los estándares de la empresa."</p>
-    </section>
-    <section>
-        <h2>Experiencia</h2>
-        <ul>
-            <li> 
-                <p>Colaboré en el mantenimiento básico de equipos de cómputo y actualización de programas para los clientes.</p>
-            </li>
-            <li>
-                <p>Fui reconocido por mi puntualidad, buena actitud y capacidad para trabajar bajo presión en días de alta rotación.</p>
-            </li>
-            <li>
-                <p>
-                    Participé en el diseño y desarrollo de un sistema web para la gestión de inventarios y ventas de una microempresa local como proyecto principal de la formación.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Diseñé y organicé la base de datos para el registro de usuarios y productos, garantizando el orden de la información.
-                </p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Trayectoria</h2>
-        <ul>
-            <li>
-                <h4>Aprendiz en Tecnología ADSO | SENA</h4>
-                <h5>2024 – Presente</h5>
-                <p>Ingreso al Servicio Nacional de Aprendizaje para enfocar mi perfil en el mundo digital y el desarrollo de software.</p>
-            </li>
-            <li>
-                <h4>Auxiliar de Logística y Servicio (Trabajo Temporal) | Almacenes Éxito</h4>
-                <h5>2023 – 2024 (1 año)</h5>
-                <p>Responsable del control de inventarios físicos y organización de mercancía en bodega.</p>
-            </li>
-            <li>
-                <h4>Bachiller Académico | Institución Educativa Técnico Industrial</h4>
-                <h5>Graduado en 2022</h5>
-                <p>Culminación de estudios secundarios con énfasis y gusto por las herramientas informáticas y la tecnología.</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Educación</h2>
-        <ul>
-            <li>
-                <h4>Tecnología en Análisis y Desarrollo de Software (ADSO)</h4>
-                <h5>Servicio Nacional de Aprendizaje (SENA) — Centro de Procesos Industriales</h5>
-                <p>
-                    Estado actual: Etapa lectiva culminada con éxito. Disponible de manera inmediata para iniciar la etapa práctica mediante Contrato de Aprendizaje.
-                </p>
-            </li>
-            <li>
-                <h4>Curso Especializado: Desarrollo Web Básico y Manejo de Herramientas Digitales (80 horas)</h4>
-                <h5>SENA SofíaPlus</h5>
-                <p>Formación complementaria previa al tecnólogo para afianzar conceptos de lógica y entornos virtuales.</p>
-            </li>
-            <li>
-                <h4>Bachiller Académico</h4>
-                <h5>Institución Educativa Técnico Industrial</h5>
-                <p>Enfoque y profundización en herramientas informáticas y tecnología.</p>
-            </li>
-        </ul>
-    </section>
     <footer>
-        <h3>
-            <p>&copy; Hoja de Vida - Angie Verónica Carvajal</p>
-        </h3>
+        <p>&copy; Hoja de Vida - Angie Verónica Carvajal</p>
     </footer>
 </body>
 
