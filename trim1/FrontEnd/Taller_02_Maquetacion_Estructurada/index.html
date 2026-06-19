@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Noticias Tecnológicas</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="menu-lateral">
+        <h3>Menú Lateral</h3>
+        <ul>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#tarjetas">Destacados</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </aside>
+
+    <div class="contenido-principal">
+
+        <header>
+            <div class="logo">TechBlog</div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#tutoriales">Tutoriales</a></li>
+                    <li><a href="#opinion">Opinión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+            <section id="articulos">
+                <h2>Últimas Noticias</h2>
+                
+                <article>
+                    <h3>El impacto de la Inteligencia Artificial en 2026</h3>
+                    <p class="fecha">Publicado el 18 de Junio, 2026</p>
+                    <p>La inteligencia artificial generativa continúa transformando los flujos de trabajo globales. En esta nota analizamos cómo los nuevos modelos integrados permiten una automatización avanzada en el software.</p>
+                </article>
+
+                <article>
+                    <h3>El futuro del desarrollo web con CSS4</h3>
+                    <p class="fecha">Publicado el 15 de Junio, 2026</p>
+                    <p>Las nuevas especificaciones de CSS prometen revolucionar la forma en que estructuramos nuestros estilos, trayendo condicionales lógicos y mezclas de colores directas en el navegador.</p>
+                </article>
+            </section>
+
+            <section id="tarjetas">
+                <h2>Productos Destacados</h2>
+                <div class="contenedor-tarjetas">
+                    
+                    <div class="tarjeta">
+                        <img src="https://picsum.photos/id/1px/400/250" alt="Portátil de última generación">
+                        <div class="tarjeta-cuerpo">
+                            <h3>Portátil Pro 2026</h3>
+                            <p>Un equipo ultradelgado diseñado para desarrolladores exigentes, con procesador de alto rendimiento y batería de larga duración.</p>
+                            <button type="button">Ver más</button>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="https://picsum.photos/id/60/400/250" alt="Monitor curvo">
+                        <div class="tarjeta-cuerpo">
+                            <h3>Monitor Ultrawide</h3>
+                            <p>Maximiza tu productividad con una pantalla curva de 34 pulgadas que ofrece una fidelidad de color excepcional.</p>
+                            <button type="button">Ver más</button>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="https://picsum.photos/id/119/400/250" alt="Teclado mecánico">
+                        <div class="tarjeta-cuerpo">
+                            <h3>Teclado Mecánico RGB</h3>
+                            <p>Ergonomía y respuesta táctil en formato compacto. Ideal para largas sesiones de código.</p>
+                            <button type="button">Ver más</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="galeria">
+                <h2>Galería Tecnológica</h2>
+                <div class="galeria">
+                    <div class="item-galeria"><img src="https://picsum.photos/id/160/300/300" alt="Gadget 1"></div>
+                    <div class="item-galeria"><img src="https://picsum.photos/id/180/300/300" alt="Gadget 2"></div>
+                    <div class="item-galeria"><img src="https://picsum.photos/id/250/300/300" alt="Gadget 3"></div>
+                    <div class="item-galeria"><img src="https://picsum.photos/id/367/300/300" alt="Gadget 4"></div>
+                    <div class="item-galeria"><img src="https://picsum.photos/id/445/300/300" alt="Gadget 5"></div>
+                    <div class="item-galeria"><img src="https://picsum.photos/id/516/300/300" alt="Gadget 6"></div>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="#" method="POST" class="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TechBlog - Curso de HTML5 Semántico y CSS. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
