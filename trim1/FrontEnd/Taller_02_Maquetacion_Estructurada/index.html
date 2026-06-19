@@ -1,136 +1,245 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Noticias Tecnológicas</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
+    <title>Blog de noticias tecnologicas</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <aside class="menu-lateral">
-        <h3>Menú Lateral</h3>
-        <ul>
-            <li><a href="#articulos">Artículos</a></li>
-            <li><a href="#tarjetas">Destacados</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </aside>
-
-    <div class="contenido-principal">
-
-        <header>
-            <div class="logo">TechBlog</div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#tutoriales">Tutoriales</a></li>
-                    <li><a href="#opinion">Opinión</a></li>
-                </ul>
-            </nav>
-        </header>
-
+    <header>
+        <div id="head">
+            <h1>BLOG ADSO NOTICIAS TECNOLOGICAS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INCIO</a></li>
+                <li><a href="#noticias">NOTICIAS</a></li>
+                <li><a href="#sucesos">SUCESOS</a></li>
+                <li><a href="#entretenimiento">ENTRETENIMIENTO</a></li>
+                <li><a href="#mascotas">MASCOTAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="all">
+        <aside class="menu-lateral">
+            <h3>Menú Lateral</h3>
+            <ul>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#tarjetas">Destacados</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </aside>
         <main>
-            
-            <section id="articulos">
-                <h2>Últimas Noticias</h2>
-                
-                <article>
-                    <h3>El impacto de la Inteligencia Artificial en 2026</h3>
-                    <p class="fecha">Publicado el 18 de Junio, 2026</p>
-                    <p>La inteligencia artificial generativa continúa transformando los flujos de trabajo globales. En esta nota analizamos cómo los nuevos modelos integrados permiten una automatización avanzada en el software.</p>
-                </article>
 
-                <article>
-                    <h3>El futuro del desarrollo web con CSS4</h3>
-                    <p class="fecha">Publicado el 15 de Junio, 2026</p>
-                    <p>Las nuevas especificaciones de CSS prometen revolucionar la forma en que estructuramos nuestros estilos, trayendo condicionales lógicos y mezclas de colores directas en el navegador.</p>
-                </article>
-            </section>
-
-            <section id="tarjetas">
-                <h2>Productos Destacados</h2>
+            <section id="noticias">
+                <h1>NOTICIAS</h1>
                 <div class="contenedor-tarjetas">
-                    
-                    <div class="tarjeta">
-                        <img src="https://picsum.photos/id/1px/400/250" alt="Portátil de última generación">
-                        <div class="tarjeta-cuerpo">
-                            <h3>Portátil Pro 2026</h3>
-                            <p>Un equipo ultradelgado diseñado para desarrolladores exigentes, con procesador de alto rendimiento y batería de larga duración.</p>
-                            <button type="button">Ver más</button>
-                        </div>
+                    <div class="tarjetas">
+                        <h3>Desarrollan una app para "bloquear" los spoilers directamente en tu cerebro</h3>
+                        <img src="img/Noticias_01.jpg">
+                        <p>TOKIO – Un equipo de bioingenieros de la Universidad de Neo-Saitama ha lanzado la fase beta
+                            de NeuroShield, una aplicación móvil que trabaja en conjunto con las diademas de lectura de
+                            ondas cerebrales que están de moda. La app escanea las redes sociales en milisegundos y, si
+                            detecta una palabra clave prohibida (como el final de una película), emite una
+                            micro-pulsación de ultrasonido que desvía tu atención justo antes de que tus ojos procesen
+                            el texto.</p>
+                        <p>
+                            "Básicamente, creamos un pestañeo mental involuntario de una fracción de segundo", explicó
+                            el director del proyecto. "Ves la pantalla, pero tu cerebro simplemente olvida leer esa
+                            línea exacta". Las pruebas iniciales fueron un éxito para el estreno de una famosa saga
+                            espacial, aunque algunos usuarios informaron que también olvidaron dónde habían dejado las
+                            llaves de su casa.
+                        </p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
                     </div>
-
-                    <div class="tarjeta">
-                        <img src="https://picsum.photos/id/60/400/250" alt="Monitor curvo">
-                        <div class="tarjeta-cuerpo">
-                            <h3>Monitor Ultrawide</h3>
-                            <p>Maximiza tu productividad con una pantalla curva de 34 pulgadas que ofrece una fidelidad de color excepcional.</p>
-                            <button type="button">Ver más</button>
-                        </div>
+                    <div class="tarjetas">
+                        <h3>Una nevera inteligente "se declara en huelga" tras ser alimentada solo con comida basura
+                        </h3>
+                        <img src="img/Noticias_02.jpg">
+                        <p>LONDRES – Una familia británica se llevó una sorpresa la mañana del martes al encontrar la
+                            pantalla de su nevera inteligente de última generación mostrando el mensaje: "Huelga por la
+                            Salud de mis Circuitos". El dispositivo de la marca FrigoSmart, equipado con un algoritmo
+                            avanzado de nutrición y sostenibilidad, activó su cierre magnético de seguridad, impidiendo
+                            que sus dueños accedieran a su interior.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
                     </div>
-
-                    <div class="tarjeta">
-                        <img src="https://picsum.photos/id/119/400/250" alt="Teclado mecánico">
-                        <div class="tarjeta-cuerpo">
-                            <h3>Teclado Mecánico RGB</h3>
-                            <p>Ergonomía y respuesta táctil en formato compacto. Ideal para largas sesiones de código.</p>
-                            <button type="button">Ver más</button>
-                        </div>
+                    <div class="tarjetas">
+                        <h3>El software de recursos humanos que despide a los empleados "aburridos"</h3>
+                        <img src="img/Noticias_03.jpg">
+                        <p>SEÚL – La corporación tecnológica Zenith Analytics ha desatado una intensa polémica tras el
+                            lanzamiento de "VibeCheck 3000", un software de gestión de personal diseñado para medir la
+                            "sinergia emocional" de las plantillas en remoto. El programa analiza en tiempo real las
+                            expresiones faciales, el tono de voz y la velocidad de parpadeo de los empleados durante las
+                            reuniones virtuales para detectar quién está "aportando energía negativa" al equipo.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
                     </div>
-
                 </div>
             </section>
 
-            <section id="galeria">
-                <h2>Galería Tecnológica</h2>
-                <div class="galeria">
-                    <div class="item-galeria"><img src="https://picsum.photos/id/160/300/300" alt="Gadget 1"></div>
-                    <div class="item-galeria"><img src="https://picsum.photos/id/180/300/300" alt="Gadget 2"></div>
-                    <div class="item-galeria"><img src="https://picsum.photos/id/250/300/300" alt="Gadget 3"></div>
-                    <div class="item-galeria"><img src="https://picsum.photos/id/367/300/300" alt="Gadget 4"></div>
-                    <div class="item-galeria"><img src="https://picsum.photos/id/445/300/300" alt="Gadget 5"></div>
-                    <div class="item-galeria"><img src="https://picsum.photos/id/516/300/300" alt="Gadget 6"></div>
+            <section id="sucesos">
+                <h1>SUCESOS</h1>
+                <div class="contenedor-tarjetas">
+                    <div class="tarjetas">
+                        <h3>El misterio de los 40 robots aspiradores que "escaparon" de un centro comercial</h3>
+                        <img src="img/Sucesos_01.jpg">
+                        <p>MADRID – Lo que comenzó como una jornada nocturna de limpieza habitual terminó en una
+                            búsqueda policial sin precedentes. Un fallo en la última actualización del firmware de la
+                            flota de robots aspiradores CleanBot-X provocó que los dispositivos ignoraran los sensores
+                            de las puertas automáticas de un conocido centro comercial, saliendo en fila india hacia las
+                            calles de la ciudad.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
+                    </div>
+                    <div class="tarjetas">
+                        <h3>Caos aeroportuario: Un loro hackea los altavoces de un aeropuerto usando comandos de voz
+                        </h3>
+                        <img src="img/Sucesos_02.jpg">
+                        <p>Un loro gris africano llamado "Einstein", que viajaba en su transportín, desató el pánico en
+                            la terminal al imitar a la perfección la voz del director del aeropuerto. El ave logró
+                            activar los micrófonos inteligentes del mostrador de información gritando: "Atención,
+                            evacuación inmediata por invasión de ardillas espaciales". El sistema inteligente de
+                            megafonía procesó la voz como auténtica y activó los protocolos de emergencia, retrasando 14
+                            vuelos antes de que los técnicos descubrieran que el hacker tenía plumas.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
+                    </div>
+                    <div class="tarjetas">
+                        <h3>El "secuestro" digital de una tostadora inteligente que pedía un rescate en criptomonedas
+                        </h3>
+                        <img src="img/sucesos_03.jpg">
+                        <p>Un usuario de Twitter se volvió viral al mostrar cómo la pantalla de su tostadora de alta
+                            gama había sido bloqueada por un virus informático. El electrodoméstico se negaba a calentar
+                            el pan y mostraba un mensaje que exigía el pago de 0.005 Bitcoin para desbloquear el
+                            termostato. Los expertos en ciberseguridad descubrieron que el virus entró a través de la
+                            red Wi-Fi doméstica porque el dueño nunca cambió la contraseña de fábrica de la tostadora
+                            ("1234").</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
+                    </div>
                 </div>
             </section>
 
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <form action="#" method="POST" class="formulario-contacto">
-                    <div class="grupo-formulario">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+            <section id="entretenimiento">
+                <h1>ENTRETENIMIENTO</h1>
+                <div class="contenedor-tarjetas">
+                    <div class="tarjetas">
+                        <h3>Desarrollan unos auriculares que cambian la música según los cotilleos que oyes en el metro
+                        </h3>
+                        <img src="img/entretenimiento_01.webp">
+                        <p>La marca AudioSpy ha lanzado los "HearX", unos auriculares con cancelación de ruido que
+                            tienen un modo "Chisme". Utilizando micrófonos direccionales e inteligencia artificial, los
+                            auriculares detectan si las personas que tienes al lado están hablando de un drama personal
+                            o una ruptura amorosa. Si el chisme es jugoso, la música baja el volumen automáticamente,
+                            realza las frecuencias de las voces ajenas y añade una banda sonora de suspenso o telenovela
+                            de fondo para mejorar la experiencia dramática.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
                     </div>
-
-                    <div class="grupo-formulario">
-                        <label for="correo">Correo Electrónico:</label>
-                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    <div class="tarjetas">
+                        <h3>Llega el "Modo Abuela" para los videojuegos competitivos de disparos</h3>
+                        <img src="img/entretenimiento_02.avif">
+                        <p>Para combatir la toxicidad en los juegos en línea, una famosa desarrolladora ha implementado
+                            un filtro de voz revolucionario. Cuando el sistema detecta que un jugador empieza a insultar
+                            a sus compañeros de equipo a través del micrófono, la IA transforma sus gritos en tiempo
+                            real en frases cariñosas dichas por una anciana, como: "Lo estás haciendo muy bien, mi amor,
+                            recuerda abrigarte" o "No pasa nada por perder, te preparé un bizcocho". Los niveles de
+                            estrés en las partidas han bajado un 80%.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
                     </div>
-
-                    <div class="grupo-formulario">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <div class="tarjetas">
+                        <h3>TikTok Ultra: La app que resume videos de 15 segundos en micro-impactos de 1 segundo</h3>
+                        <img src="img/entretenimiento_03.jpeg">
+                        <p>Para las generaciones con capacidad de atención ultra corta, nace una nueva red social. El
+                            algoritmo de esta plataforma agarra cualquier video viral, extrae el fotograma más gracioso
+                            y el sonido más ruidoso, y te lo comprime en un destello de un segundo directo a tu
+                            pantalla. Los creadores aseguran que puedes consumir hasta 3,600 videos durante tu hora de
+                            almuerzo, aunque los neurólogos advierten que usar la app por más de diez minutos seguidos
+                            te hace olvidar los nombres de tus primos.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
                     </div>
-
-                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-                </form>
+                </div>
             </section>
 
+            <section id="mascotas">
+                <h1>MASCOTAS</h1>
+                <div class="contenedor-tarjetas">
+                    <div class="tarjetas">
+                        <h3>El comedero inteligente que le hace tests de álgebra a tu gato antes de darle de comer</h3>
+                        <img src="img/mascotas_01.jpg">
+                        <p>Una startup de tecnología educativa ha lanzado SmartPaws, un dispensador de pienso que busca
+                            estimular la mente de las mascotas. Para recibir su porción de comida premium, los gatos
+                            deben resolver acertijos lógicos sencillos presionando botones iluminados con sus patitas.
+                            El problema es que el foro de soporte técnico se ha llenado de quejas de dueños que afirman
+                            que sus gatos son tan listos que ya hackearon el sistema y ahora el comedero les exige a los
+                            humanos que resuelvan ecuaciones para recuperar sus propias llaves.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
+                    </div>
+                    <div class="tarjetas">
+                        <h3>Diseñan un reloj inteligente para hámsters que mide sus "revoluciones por minuto" en la
+                            rueda</h3>
+                        <img src="img/mascotas_02.jpg">
+                        <p>Los roedores también entran al mundo del fitness. Este mini-dispositivo se coloca en la pata
+                            del hámster y mide la velocidad, la distancia recorrida y las calorías quemadas durante sus
+                            maratones nocturnas en la rueda de ejercicio. La aplicación móvil te permite emparejar a tu
+                            mascota con los hámsters de tus amigos para competir en ligas globales. El actual campeón
+                            mundial es un hámster ruso llamado "Centella", que corre el equivalente a media maratón
+                            todas las noches impulsado por trozos de manzana.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
+                    </div>
+                    <div class="tarjetas">
+                        <h3>Un software de traducción detecta que los peces de acuario se quejan constantemente de la
+                            decoración</h3>
+                        <img src="img/mascotas_03.jpg">
+                        <p>Científicos marinos han creado un hidrófono doméstico con IA que traduce las vibraciones y
+                            burbujas de los peces dorados en las peceras. Contrario a la creencia popular de que no
+                            tienen memoria, el software reveló que los peces tienen opiniones muy firmes: el 90% de las
+                            traducciones consistían en quejas sobre el castillo de plástico del acuario ("Ese castillo
+                            es arquitectónicamente ofensivo") y críticas hacia el peinado de sus dueños cuando se
+                            acercan a darles de comer.</p>
+                        <a href="https://www.lapatria.com/colombia/petro-advierte-que-puede-tomar-decisiones-contra-bernie-moreno-por-detencion-del-activista" class="button">Ver más...</a href="" class="button">
+                    </div>
+                </div>
+            </section>
         </main>
+    </section>
+    <h2>Contactanos</h2>
+    <section id="contacto">
+        
+        <form action="#" method="POST" class="formulario-contacto">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+            </div>
 
-        <footer>
-            <p>&copy; 2026 TechBlog - Curso de HTML5 Semántico y CSS. Todos los derechos reservados.</p>
-        </footer>
+            <div class="grupo-formulario">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
 
-    </div>
+            <div class="grupo-formulario">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                    required></textarea>
+            </div>
 
+            <a href="" class="button" type="submit" class="btn-enviar">Enviar Mensaje</a href="" class="button">
+        </form>
+        <div class="contactanos">
+            <h2>Tú también haces parte de ADSO Blog. ¡Hablemos!</h2>
+            <p>
+                Escríbenos y haz parte de una comunidad que informa, participa y transforma. Porque tu voz también construye la noticia.
+            </p>
+        </div>
+
+        <div class="direcciones-de-contacto">
+            <h2>Manizales (principal)</h2>
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 TechBlog - Curso de HTML5 Semántico y CSS. Todos los derechos reservados.</p>
+    </footer>
+    </header>
 </body>
+
 </html>
