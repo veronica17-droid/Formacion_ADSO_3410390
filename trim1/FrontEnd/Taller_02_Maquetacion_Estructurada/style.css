@@ -170,64 +170,102 @@ main {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
+/* Contenedor principal del formulario */
 #contacto {
-    background-color: white;
-    border: 1px solid black;
-    gap: 5px;
-    width: 70%;
-    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    gap: 30px;
+    width: 80%;
+    max-width: 900px;
+    padding: 40px;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-
+    align-items: stretch;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Título principal */
 #contacto h2 {
-    margin-bottom: 15px;
-    color: black;
+    margin-bottom: 20px;
+    color: #1a2530;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
+/* Bloque del formulario */
 .formulario-contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 40%;
-}
-.contactanos{
-    display: flex;
-    flex-direction: column;
+    gap: 20px;
+    width: 50%;
 }
 
+/* Bloque de información adicional (si aplica) */
+.contactanos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+/* Grupos de campos (Label + Input) */
 .grupo-formulario {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     width: 100%;
 }
 
+/* Etiquetas de texto */
 .grupo-formulario label {
-    font-weight: bold;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 0.9rem;
 }
 
+/* Campos de entrada y áreas de texto */
 .grupo-formulario input,
 .grupo-formulario textarea {
-    width: 50%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
+/* Efecto al hacer clic/foco en los campos */
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+    outline: none;
+    border-color: #445c75;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(68, 92, 117, 0.15);
+}
+
+/* Botón de enviar */
 .formulario-contacto button {
     background-color: #445c75;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1rem;
     align-self: flex-start;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+/* Efectos del botón */
 .formulario-contacto button:hover {
-    background-color: #003d82;
+    background-color: #2c3e50;
+}
+
+.formulario-contacto button:active {
+    transform: scale(0.98);
 }
