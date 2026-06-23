@@ -15,7 +15,7 @@ void main(List<String> args) {
     }
   } 
   double promedio = cantNotas / calificaciones;
-   print("La calificación promedio del grupo es: ${promedio.toStringAsFixed(2)}");
+  print("La calificación promedio del grupo es: $promedio");
   print("La calificación más baja de todo el grupo es: $notaMasBaja");
 
 }
