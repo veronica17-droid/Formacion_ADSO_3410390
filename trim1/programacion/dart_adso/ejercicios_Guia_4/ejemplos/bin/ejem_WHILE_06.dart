@@ -13,7 +13,7 @@ void main(List<String> args) {
     int min = 180;
     int max = 200;
     int aleatorio = min + random.nextInt(max - min + 1);
-    print("");
+    print(aleatorio);
   }
 
 }
