@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="variables.css">
+</head>
+<body>
+    <nav class="navegacion">
+
+    </nav>
+    <main class="perfil">
+        <section class="desarrolladores">
+            <div id="desarrollador-one">
+                <img src="img/desarrollador-one.JPG" alt="Desarrollador one">
+                <p>Touluse</p>
+            </div>
+            <div id="desarrollador-two">
+                <img src="img/desarrollador-two.png" alt="Desarrollador dos">
+                <p>Vero</p>
+            </div>
+            <div id="desarrollador-three">
+                <img src="img/desarrollador-three.webp" alt="Desarrollador tres">
+                <p>Marden</p>
+            </div>
+            <button id="boton">
+                Enviar formulario
+            </button>
+        </section>
+        <section class="preguntas-frecuentes">
+            <h1>Preguntas frecuentes</h1>
+            <details>
+                <summary>¿Por qué el primer error de software de la historia se llamó "bug" (bicho)?</summary>
+                <p>
+                    En 1947, la científica Grace Hopper estaba trabajando en la computadora Mark II de Harvard. El sistema falló y, al revisar los relés electromagnéticos, encontraron una polilla real atrapada en los circuitos. La pegaron con cinta en la bitácora del proyecto con la anotación: "Primer caso real de un bicho (bug) siendo encontrado". Desde entonces, resolver fallos se llama debugging.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Qué es el "Hoisting" en JavaScript?</summary>
+                <P>
+                    Es un comportamiento nativo de JavaScript donde las declaraciones de variables (con var) y funciones se "elevan" lógicamente a la parte superior de su contexto de ejecución antes de que se ejecute el código. Esto permite llamar a una función antes de la línea donde está escrita. (Nota: Las variables declaradas con let y const también se elevan, pero no se inicializan, quedando en una "zona muerta temporal" que lanza un error si intentas usarlas antes).
+                </P>
+            </details>
+
+            <details>
+                <summary>¿Qué significa que una API sea RESTful?</summary>
+                <p>
+                    Significa que sigue las restricciones de la arquitectura REST. Las más importantes son: utilizar los métodos HTTP de forma semántica (GET para leer, POST para crear, PUT/PATCH para actualizar, DELETE para borrar), ser stateless (sin estado, cada petición debe llevar toda la información necesaria) y manejar recursos identificables mediante URIs claras.
+                </p>
+            </details>
+
+        </section>
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
