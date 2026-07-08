@@ -24,13 +24,13 @@ body{
 .desarrolladores{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; 
     background-color: var(--card-bg);
     border: 2px solid var(--border-color);
     padding: 20px;
     width: calc(100% - 40px);
     border-radius: 20px;
     gap: 2rem;
-    justify-content: center; 
     align-items: center;     
 }
 .desarrolladores img{
@@ -61,7 +61,7 @@ button{
     background-color: var(--accent-color);
     color: #d3d0d0;
     border-color: rgb(58, 4, 63);
-    transition: background 0.5s ease, transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: background 0.5s ease, transform 0.2s;
 }
 button:hover{
     background-color: rgb(221, 136, 235);
@@ -118,60 +118,50 @@ summary:hover{
     box-sizing: border-box;
 }
 
-/*Loader */
 .loader {
     width: 50px;
     height: 50px;
-    
-    /* 1. CREAR EL ANILLO: Borde base oscuro y circular */
     border: 5px solid var(--border-color);
     border-radius: 50%;
-    
-    /* 2. EL LADO DIFERENTE: Pintamos solo la parte superior con el color brillante */
     border-top-color: var(--accent-color);
-    
-    /* 3. LA ANIMACIÓN: Nombre (spin), Duración (1s), Ritmo (linear), Repetición (infinite) */
     animation: spin 1s linear infinite;
 }
 @keyframes spin {
     from {
-        transform: rotate(0deg); /* Estado inicial: sin rotación */
+        transform: rotate(0deg); 
     }
     to {
-        transform: rotate(360deg); /* Estado final: vuelta completa */
+        transform: rotate(360deg); 
     }
 }
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Inicia 20 píxeles más abajo de su posición real */
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);    /* Sube suavemente a su posición original */
+        transform: translateY(0);
     }
 }
 
 
 .desarrolladores img, .profile-card {
-    opacity: 0; /* Arrancan totalmente invisibles mientras carga la página */
-    /* Aplicamos la animación: Nombre, Duración, Curva de tiempo, y Forwards */
+    opacity: 0;
     animation-name: fadeInUp;
     animation-duration: 0.6s;
-    animation-timing-function: ease-out; /* Inicia rápido y frena suavemente al llegar */
-    animation-fill-mode: forwards;       /* ¡CRÍTICO! Mantiene el estado final (opacity: 1) */
+    animation-timing-function: ease-out; 
+    animation-fill-mode: forwards;  
 }
 
-/* Le asignamos un retraso (delay) diferente a cada tarjeta basándonos en su orden */
-
 .desarrolladores img:nth-child(1) {
-    animation-delay: 0.2s; /* La primera tarjeta espera 200 milisegundos */
+    animation-delay: 0.2s; 
 }
 
 .desarrolladores img:nth-child(2) {
-    animation-delay: 0.5s; /* La segunda espera un poco más */
+    animation-delay: 0.5s; 
 }
 
-.desarrolladores img:nth-child(3) {
-    animation-delay: 0.8s; /* La tercera es la última en aparecer */
+.desarrolladores div:nth-child(3) {
+    animation-delay: 0.8s; 
 }

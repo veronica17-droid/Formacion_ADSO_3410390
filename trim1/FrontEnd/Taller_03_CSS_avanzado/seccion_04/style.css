@@ -1,0 +1,262 @@
+:root{
+    --bg-color-principal:rgba(255, 136, 0, 0.945);
+    --bg-color:rgba(215, 243, 243, 0.24);
+    --border: 2px solid white;
+}
+body{
+    font-family: "Geist Pixel", sans-serif;
+    display: flex; 
+    flex-direction: column;
+    margin: 0; 
+}
+.cabecera{
+    background-color: var(--bg-color-principal);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+h1{
+    font-family: "Geist Pixel", sans-serif;
+    border-radius: 10px;
+    padding: 5%;
+    font-size: clamp(2rem, 4vw, 4rem);
+    background-color: rgba(215, 243, 243, 0.24);
+    text-align: center;
+    border: var(--border);
+}
+#logotipo{
+    aspect-ratio: 1 / 1 ;
+    object-fit: cover;
+    width: 15rem;
+}
+.widget{
+    font-family: "Geist Pixel", sans-serif;
+    background-color: var(--bg-color);
+    padding: 2%;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    border: var(--border);
+}
+#foto-widget{
+    width: 9rem;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.equipo{
+    flex-direction: row ;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 30px;
+    padding: 20px; 
+    background-color: rgb(18, 4, 139);
+    color: #d3d0d0;
+}
+
+.modulo-partidos {
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   gap:5px;
+   
+}
+.tarjeta-partido {
+    width: 25rem;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    border-radius: 12px;
+    background-color: var(--bg-color);
+}
+.equipo { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 30%; 
+}
+.marcador-gestion{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+}
+.marcador-gestion input{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5% ;
+}
+button {
+    background-color: #ff3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 12rem;
+    height: 2rem;
+    color: #d3d0d0;
+    font-family: "Geist Pixel", sans-serif;
+    cursor: pointer;
+    grid-column: 1 / -1; 
+    justify-self: center; 
+}
+button:hover{
+    background-color: rgb(220, 235, 136);
+    border-color: black;
+    color: black;
+    transform: scale(1.05);
+}
+button:active{
+    transform: scale(0.9);
+}
+aside{
+    background-color: var(--bg-color);
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.modulo-ranking{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#avatar{
+    width: 9rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.perfil-td{
+    display: flex;
+    flex-direction: column;
+}
+#uno{
+    background-color: rgb(165, 145, 255);
+}
+.input-marcador {
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input-marcador:invalid {
+    border-color: #ff3333 !important; 
+    background-color: #ffe6e6; 
+    box-shadow: 0 0 5px rgba(255, 51, 51, 0.5);
+}
+
+.modulo-ranking {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 12px;
+    border: var(--border);
+    font-family: "Geist Pixel", sans-serif;
+}
+
+.modulo-ranking h2 {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.tabla-ranking {
+    width: 100%;
+    border-collapse: collapse; 
+    color: white;
+}
+
+.tabla-ranking th, 
+.tabla-ranking td {
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabla-ranking th {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+
+.perfil-td {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+.puntos {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+
+/*Filas alternas*/
+.tabla-ranking tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.08); 
+}
+.tabla-ranking tbody tr:first-child {
+    background-color: rgba(255, 215, 0, 0.25); 
+    border: 2px solid gold; 
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+.tabla-ranking tbody tr {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tabla-ranking tbody tr:hover {
+    background-color: rgba(215, 243, 243, 0.3);
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .modulo-partidos {
+        grid-template-columns: 1fr;
+    }
+    .tarjeta-partido {
+        width: 100%;
+        max-width: 100%;
+        height: auto; 
+        padding: 15px 5px;
+    }
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    #logotipo {
+        width: 10rem;
+    }
+}
