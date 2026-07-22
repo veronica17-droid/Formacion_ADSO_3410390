@@ -21,38 +21,35 @@ void main(List<String> args) {
   List<String> aprendicesAprobados = [];
   List<double> mayorNota = [];
   List<double> mayorAsistencia = [];
-    List<String> estudiantesAprobados = [];
+  List<String> estudiantesAprobados = [];
 
   print("Ingrese el número de aprendices");
   int numeroAprendices = int.parse(stdin.readLineSync()!);
 
   for (var i = 0; i < numeroAprendices; i++) {
-    print("Ingrese el nombre del aprendiz ${i+1}");
-    String nombresAprendices =stdin.readLineSync()!;
+    print("Ingrese el nombre del aprendiz ${i + 1}");
+    String nombresAprendices = stdin.readLineSync()!;
     nombresAprendicesLista.add(nombresAprendices);
-    print("Ingrese el codigo de matricula del aprendiz ${i+1}");
-    int codigoMatricula =int.parse(stdin.readLineSync()!);
+    print("Ingrese el codigo de matricula del aprendiz ${i + 1}");
+    int codigoMatricula = int.parse(stdin.readLineSync()!);
     codigoMatriculaLista.add(codigoMatricula);
-    print("Ingrese la nota final aprendiz ${i+1}");
-    double notaFinal =double.parse(stdin.readLineSync()!);
+    print("Ingrese la nota final aprendiz ${i + 1}");
+    double notaFinal = double.parse(stdin.readLineSync()!);
     notaFinalLista.add(notaFinal);
-    print("Ingrese el porcentaje de asistencia del aprendiz ${i+1}");
-    double porcentajeAsistencia =double.parse(stdin.readLineSync()!);
+    print("Ingrese el porcentaje de asistencia del aprendiz ${i + 1}");
+    double porcentajeAsistencia = double.parse(stdin.readLineSync()!);
     porcentajeAsistenciaLista.add(porcentajeAsistencia);
 
     // Quienes aprobaron
     if (notaFinalLista[i] > 3.0 && porcentajeAsistenciaLista[i] > 80) {
       int aprendicesAprobados = 0;
-      aprendicesAprobados ++;
+      aprendicesAprobados++;
       mayorNota.add(notaFinal);
       mayorAsistencia.add(porcentajeAsistencia);
       estudiantesAprobados.add(nombresAprendices[i]);
     }
-    
   }
   print("$codigoMatriculaLista $notaFinalLista $porcentajeAsistenciaLista");
   print("$mayorNota, $mayorAsistencia");
   print("La lista de estudiantes que aprobaron es: $estudiantesAprobados[i]");
-
-
 }
