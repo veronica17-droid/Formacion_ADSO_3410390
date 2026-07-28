@@ -4,15 +4,38 @@ palabra o frase es palíndroma
  */
 import 'dart:io';
 
-void main() {
-  print("Ingrese una palabra o frase:");
-  String texto = stdin.readLineSync()!.toLowerCase();
+void main(List<String> args) {
+  String palabra;
+  List<String> vectorPal = [];
+  print("Ingrese la palabra/frase para verificar si es palindroma");
+  palabra = stdin.readLineSync()!.toLowerCase();
+  print("${palabra[1]}");
 
-  String invertido = texto.split('').reversed.join(''); //Invierte el texto
+  //SE LLENA EL VECTOR PAL SIN TENER EN CUENTA ESPACIOS
+  for (var i = 0; i < palabra.length; i++) {
+    print(palabra[i]);
+    if (palabra[i] != " ") {
+      vectorPal.add(palabra[i]);
+    }
+  }
 
-  if (texto == invertido) {
-    print("Es palíndroma.");
-  } else {
-    print("No es palíndroma.");
+  print(vectorPal);
+
+  int inicio = 0;
+  int fin = palabra.length-1;
+  bool esPalindroma = true;
+  while (inicio<fin) {
+    if (vectorPal[inicio] != vectorPal[fin]) {
+      //NO ES PALINDROMA
+      esPalindroma = false;
+      break;
+    }
+    inicio ++;
+    fin --;
+  }
+  if (esPalindroma == true) {
+    print("La palabra/frase $palabra es palindroma");
+  }else{
+    print("La palabra/frase $palabra no es palindroma");
   }
 }
