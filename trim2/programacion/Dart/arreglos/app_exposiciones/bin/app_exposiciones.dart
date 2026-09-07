@@ -118,7 +118,7 @@ void gestionEstudiantes() {
   } while (opcion != 5);
 }
 void generarExposiciones() {
-  print("-------------- GENERANDO EXPOSICIONES ALEATORIAS -------------------")
+  print("-------------- GENERANDO EXPOSICIONES ALEATORIAS -------------------");
   if (temas.isEmpty) {
     print("No hay temas registrados");
     return;
