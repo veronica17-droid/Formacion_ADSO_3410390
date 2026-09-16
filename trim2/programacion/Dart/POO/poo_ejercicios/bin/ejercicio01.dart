@@ -1,14 +1,15 @@
 import 'dart:io';
-
 class Empleado{
   String nombre;
   int edad;
   double salario;
   String puesto;
   String tipoContrato;
+  
 
   // Constructor
   Empleado(this.nombre, this.edad, this.salario, this.puesto, this.tipoContrato);
+
 
   //métodos
   void aumentarSalario(double porcentaje){
@@ -22,20 +23,35 @@ class Empleado{
     return puesto;
   }
   void mostrarInformacion(){
+    print("*"*50);
     print("Nombre: $nombre");
-    print("Salario: $salario");
     print("Edad $edad");
+    print("Salario base: \$$salario");
     print("Puesto $puesto");
+    print("Tipo de contrato: $tipoContrato");
+    print("Salario con bonificación: \$${calcularBonificacion()}");
+    print("*"*50);
   }
   double calcularBonificacion(){
+    double aumento = 0;
     if (tipoContrato == "contratista") {
-      return 
+      aumento = (salario*10)/100;
+      return salario+aumento;
+    }else if(tipoContrato == "temporal"){
+      aumento = (salario*5)/100;
+      return salario+aumento;
+    }else if(tipoContrato == "indefinido"){
+      aumento = (salario*15)/100;
+      return salario+aumento;
+    }else{
+      return salario;
     }
   }
 }
 void main(List<String> args) {
   List<Empleado> arrayEmpleados = [];
   int cantidadEmpleados = 0;
+  print("¿Cuántos empleados desea registrar?");
   cantidadEmpleados = int.tryParse(stdin.readLineSync() ?? "") ?? 0;
 
   for (var i = 0; i < cantidadEmpleados; i++) {
