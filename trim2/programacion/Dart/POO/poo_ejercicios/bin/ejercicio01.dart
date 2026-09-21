@@ -47,6 +47,8 @@ class Empleado{
       return salario;
     }
   }
+  //getters y setters
+  
 }
 void main(List<String> args) {
   List<Empleado> arrayEmpleados = [];
